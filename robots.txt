@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin-projets.html
+
+Sitemap: https://delrodieamoikon.github.io/portfolio/sitemap.xml

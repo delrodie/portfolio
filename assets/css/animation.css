@@ -1,0 +1,113 @@
+/* ANIMATIONS DIVERSES */
+.animation-delay-1 {
+    --animation-delay: 0.1s;
+}
+.animation-delay-2 {
+    --animation-delay: 0.25s;
+}
+.animation-delay-3 {
+    --animation-delay: 0.4s;
+}
+.animation-delay-4 {
+    --animation-delay: 0.55s;
+}
+.animation-delay-5 {
+    --animation-delay: 0.7s;
+}
+.animation-delay-6 {
+    --animation-delay: 0.85s;
+}
+.animation-delay-7 {
+    --animation-delay: 1s;
+}
+
+.animation-fadeIn {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out var(--animation-delay, 0s) forwards;
+}
+
+.animation-zoomIn {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: zoomIn 1.5s ease-in-out var(--animation-delay, 0s) forwards;
+}
+
+.animation-rotate360 {
+    transform: rotate(0deg);
+    animation: rotate360 2s linear var(--animation-delay, 0s) infinite;
+}
+
+.animation-bouce {
+    animation: bounce 1s var(--animation-delay, 0s) infinite;
+}
+
+.animation-slideInLeft {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInLeft 1s ease-in-out var(--animation-delay, 0s) forwards;
+}
+
+.animation-slideInRight {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInRight 1s ease-in-out var(--animation-delay, 0s) forwards;
+}
+
+.animation-slideUp {
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slideUp 1s ease-in-out var(--animation-delay, 0s) forwards;
+}
+
+.animation-slideDown {
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: slideDown 1s ease-in-out var(--animation-delay, 0s) forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes rotate360 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes bouce {
+    to{
+        transform: translateY(-15px);
+    }
+}
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,235 @@
+{
+  "updatedAt": "2026-07-10",
+  "projects": [
+    {
+      "slug": "dreammaker-os",
+      "date": "Depuis juillet 2026",
+      "status": "En cours",
+      "statusType": "progress",
+      "title": "DREAMMAKER OS - Plateforme SaaS",
+      "subtitle": "Groupe Dream Maker",
+      "role": "Lead developpeur PHP/Symfony",
+      "summary": "Conception et developpement d'une plateforme SaaS metier orientee automatisation, gestion des processus et pilotage operationnel.",
+      "image": "",
+      "website": "",
+      "technologies": [
+        "PHP 8",
+        "Symfony 8",
+        "API REST",
+        "MySQL",
+        "PHPUnit",
+        "PHPStan",
+        "Stimulus",
+        "UX Turbo",
+        "Tailwind CSS",
+        "Git",
+        "CI/CD"
+      ],
+      "sections": [
+        {
+          "heading": "Contexte & objectifs",
+          "items": [
+            "Mettre en place une base applicative solide pour une solution SaaS evolutive.",
+            "Structurer les modules metiers autour d'une architecture Symfony maintenable.",
+            "Preparer les integrations API et les workflows de deploiement."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ong-kagninmin",
+      "date": "Mai 2026",
+      "status": "En prod",
+      "statusType": "live",
+      "title": "Site web dynamique",
+      "subtitle": "Consultant - ONG KAGNINMIN",
+      "role": "Developpement Symfony",
+      "summary": "Developpement du site officiel de l'ONG KAGNINMIN, organisation ivoirienne dediee a la culture, l'education et l'autonomisation des femmes et jeunes filles.",
+      "image": "./assets/img/projets/ongkagninmin.png",
+      "website": "https://ongkagninmin.com/",
+      "technologies": [
+        "PHP 8",
+        "Symfony 8",
+        "MySQL",
+        "EasyAdmin",
+        "UX Turbo",
+        "Bootstrap 5.3",
+        "Git"
+      ],
+      "sections": [
+        {
+          "heading": "Contexte & objectifs",
+          "items": [
+            "Mise en valeur de l'identite et des actions de l'ONG.",
+            "Presentation claire des domaines d'intervention : culture, education, autonomisation, protection de la jeune fille, solidarite et tourisme culturel.",
+            "Gestion dynamique des actualites et realisations.",
+            "Creation d'une interface moderne, professionnelle et accessible."
+          ]
+        },
+        {
+          "heading": "Technologies utilisees",
+          "items": [
+            "Backend : Symfony PHP avec une architecture MVC propre et evolutive.",
+            "Frontend : HTML5, CSS3, JavaScript et Bootstrap 5.",
+            "Base de donnees : MySQL avec Doctrine ORM.",
+            "SEO-friendly et responsive design mobile first."
+          ]
+        },
+        {
+          "heading": "Fonctionnalites principales",
+          "items": [
+            "Pages statiques et dynamiques : accueil, qui sommes-nous, domaines d'intervention, actualites, projets et galerie.",
+            "Systeme de gestion des actualites avec mise en avant.",
+            "Sections dediees par domaine d'action avec possibilite d'ajout de contenus par l'administrateur.",
+            "Design epure et adapte au contexte culturel."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "le-grand-cru",
+      "date": "Avril 2026",
+      "status": "En cours",
+      "statusType": "progress",
+      "title": "LE GRAND CRU - Plateforme Ecommerce",
+      "subtitle": "Consultant - Le Grand Cru",
+      "role": "Developpeur Symfony",
+      "summary": "Developpement d'une plateforme ecommerce Symfony pour la presentation, la gestion et la vente de produits avec une interface moderne et responsive.",
+      "image": "",
+      "website": "",
+      "technologies": [
+        "PHP 8",
+        "Symfony 8",
+        "API REST",
+        "MySQL",
+        "PHPUnit",
+        "PHPStan",
+        "Stimulus",
+        "UX Turbo",
+        "Bootstrap 5.3",
+        "Git",
+        "CI/CD"
+      ],
+      "sections": [
+        {
+          "heading": "Contexte & objectifs",
+          "items": [
+            "Construire une experience ecommerce claire, rapide et facile a administrer.",
+            "Prevoir une architecture compatible avec les evolutions commerciales du projet.",
+            "Optimiser l'affichage responsive et les parcours utilisateur essentiels."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nyaka-nansi-2026",
+      "date": "Mars 2026",
+      "status": "En prod",
+      "statusType": "live",
+      "title": "NYAKA 2026 - Plateforme d'inscription CVAV",
+      "subtitle": "Benevole - Coeurs Vaillants Ames Vaillantes",
+      "role": "Developpement Symfony",
+      "summary": "Developpement d'une plateforme Symfony et integration de l'API Wave CI pour la gestion des inscriptions et paiements en ligne de la fete diocesaine des Coeurs Vaillants - Ames Vaillantes du Diocese d'Abidjan.",
+      "image": "./assets/img/projets/nyaka-cvav.png",
+      "website": "",
+      "technologies": [
+        "PHP 8",
+        "Symfony 8",
+        "MySQL",
+        "EasyAdmin",
+        "Stimulus",
+        "Bootstrap 5.3",
+        "Git",
+        "Wave CI"
+      ],
+      "sections": [
+        {
+          "heading": "Contexte & objectifs",
+          "items": [
+            "Permettre aux participants, enfants, jeunes et accompagnateurs, de s'inscrire en ligne a l'evenement prevu du 1er au 3 mai 2026.",
+            "Centraliser les inscriptions et faciliter le suivi administratif de l'evenement.",
+            "Integrer un parcours de paiement mobile simple et securise."
+          ]
+        },
+        {
+          "heading": "Technologies utilisees",
+          "items": [
+            "Backend : Symfony PHP.",
+            "Frontend : Twig, HTML5, CSS3, JavaScript Stimulus et Bootstrap 5.",
+            "Base de donnees : MySQL avec Doctrine ORM.",
+            "Administration : EasyAdmin.",
+            "Paiement : integration de l'API Wave CI."
+          ]
+        },
+        {
+          "heading": "Fonctionnalites principales",
+          "items": [
+            "Inscription en ligne multi-profils pour CV-AV et non CV-AV.",
+            "Paiement securise en temps reel via Wave CI.",
+            "Espace personnel avec consultation des inscriptions, telechargement des recus et choix de T-shirt.",
+            "Gestion complete des participants et contentieux via le backoffice EasyAdmin.",
+            "Exports et suivi statistique des inscriptions."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "site-web-dynamique",
+      "date": "Mai 2025",
+      "status": "Archive",
+      "statusType": "archive",
+      "title": "Site web dynamique - PFS",
+      "subtitle": "PFS-Treichville",
+      "role": "Consultant",
+      "summary": "Conception du site inetrnet de PFS Treichville",
+      "image": "./assets/img/projets/ongkagninmin.png",
+      "website": "",
+      "technologies": [
+        "Symfony8",
+        "PHP8"
+      ],
+      "sections": [
+        {
+          "heading": "Contexte & objectifs",
+          "items": [
+            "Premier point a presenter.",
+            "Deuxieme point.",
+            "Troisieme point."
+          ]
+        },
+        {
+          "heading": "Fonctionnalités",
+          "items": [
+            "Fonctionnalite 1",
+            "Fonctionnalité 2",
+            "Fonctionnalite 3"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "projet-test",
+      "date": "Janv 2025",
+      "status": "Archive",
+      "statusType": "archive",
+      "title": "Projet Test",
+      "subtitle": "PFS-Treichville",
+      "role": "Consultant",
+      "summary": "test",
+      "image": "",
+      "website": "https://delrodie.github.io",
+      "technologies": [
+        "Symfony8",
+        "PHP8"
+      ],
+      "sections": [
+        {
+          "heading": "Contexte & objectifs",
+          "items": [
+            "Premier point a presenter."
+          ]
+        }
+      ]
+    }
+  ]
+}

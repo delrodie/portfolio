@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr" class="scrollbar-thumb-gray-700/30 scrollbar-track-black overflow-auto">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos de Dieudonné Amoikon | Développeur PHP Symfony</title>
+    <meta name="description" content="Découvrez le parcours de Dieudonné Amoikon, analyste programmeur senior spécialisé en PHP, Symfony et conception d'applications web à Abidjan." />
+    <meta name="author" content="Dieudonné Amoikon" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://delrodieamoikon.github.io/portfolio/apropos.html" />
+    <meta property="og:locale" content="fr_CI" /><meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Portfolio de Dieudonné Amoikon" />
+    <meta property="og:title" content="À propos de Dieudonné Amoikon" />
+    <meta property="og:description" content="Parcours, profil et expertise d'un analyste programmeur senior spécialisé en PHP et Symfony." />
+    <meta property="og:url" content="https://delrodieamoikon.github.io/portfolio/apropos.html" />
+    <meta property="og:image" content="https://delrodieamoikon.github.io/portfolio/assets/img/portrait-color.png" /><meta property="og:image:alt" content="Portrait de Dieudonné Amoikon" />
+    <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="À propos de Dieudonné Amoikon" /><meta name="twitter:description" content="Découvrez mon parcours et mon expertise en développement web PHP/Symfony." /><meta name="twitter:image" content="https://delrodieamoikon.github.io/portfolio/assets/img/portrait-color.png" />
+    <link rel="shortcut icon" href="./assets/img/favico2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/navigation.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-black text-white">
+    <header class="container mx-auto absolute inset-x-0 top-0 z-50 bg-black/50 backdrop-blur-sm fixed">
+        <nav class="flex items-center justify-between py-2 px-4 lg:px-8 bg-" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="index.html"
+                    class="text-xl text-[#00c950] font-bold justify-center items-center flex gap-2 logo">
+                    <img src="./assets/img/logo/logo-amoikon.png" alt="" class="" width="90px">
+                    <span class="text-2xl md:text-3xl lg:text-3xl">AMOIKON D.</span>
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+                    <span class="sr-only">Ouvrir le menu principal</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        data-slot="icon" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="index.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">Accueil</a>
+                <a href="apropos.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">À propos</a>
+                <a href="competences.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">Compétences</a>
+                <a href="projets.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">Projets</a>
+                <a href="contact.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">Contact</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="#contact"
+                    class="px-5 py-2 bg-green-500 text-[#1e40af] font-semibold hover:bg-green-700 hover:text-white rounded-3xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 transition">Soumettez
+                    votre projet</a>
+            </div>
+        </nav>
+        <el-dialog>
+            <dialog id="mobile-menu" class="backdrop:gbg-transparent lg-hidden">
+                <div class="fixed inset-0 focus:outline-none">
+                    <el-dialog-panel
+                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#0f172a] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                        <div class="flex items-center justify-between">
+                            <a href="index.html" class="-m-1.5 p-1.5 justify-center items-center flex gap-2 logo">
+                                <img src="./assets/img/logo/logo-amoikon-vert.png" alt="Logo Amoikon"
+                                    class="h-8 w-auto">
+                                <span class="text-lg md:text-2xl lg:text-2xl text-[#00c950]">AMOIKON D.</span>
+                            </a>
+                            <button type="button" command="close" commandfor="mobile-menu"
+                                class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                                <span class="sr-only">CLose menu</span>
+                                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" data-slot="icon" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-gray-500/25">
+                                <div class="space-y-2 py-6">
+                                    <a href="index.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base/7 font-semibold text-white hover:bg-gray-400/10">Accueil</a>
+                                    <a href="apropos.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">À
+                                        propos</a>
+                                    <a href="competences.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">Compétences</a>
+                                    <a href="projets.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">Projets</a>
+                                    <a href="contact.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">Contact</a>
+                                </div>
+                                <div class="py-6">
+                                    <a href="contact.html"
+                                        class="-mx-3 block rounded-lg py-2.5 px-3 text-center text-sm font-semibold leading-6 bg-green-500 text-[#1e40af] hover:bg-green-700 hover:text-white transition">Soumettez
+                                        votre projet</a>
+                                </div>
+                            </div>
+                    </el-dialog-panel>
+                </div>
+            </dialog>
+        </el-dialog>
+    </header>
+    <main>
+        <section id="page"
+            class="container mx-auto relative isolate min-h-screen flex flex-col justify-center items-start content-start pt-28 pb-16">
+            <div class="relative mx-auto max-w-[1512px]"> 
+                <!-- Entete -->
+                <h1 class="text-4xl md:text-7xl text-center font-cocon text-gray-800/70 hover:text-gray-700 transition">À propos de moi</h1>
+                <div
+                    class="mx-auto relative flex flex-col lg:flex-row gap-4 justify-center items-center content-start lg:mt-20 2xl:mt-0">
+
+                    <div class="relative rounded-full lg:w-[40%] 2xl:w-[40%] mt-2 md:mt-15">
+                        <figure class="overflow-hidden animation-zoomIn animation-delay-1 rounded-full lg:fixed lg:top-50">
+                            <img src="./assets/img/amoikon4.png" alt=""
+                                class="object-contain w-[350px] h-[350px] md:w-[600px] md:h-[600px] rounded-full lg:h-[600px] 2xl:h-[750px] 2xl:w-[750px] hover:scale-110 transition duration-900 cursor-pointer">
+                        </figure>
+                    </div>
+                    <div class="relative lg:w-[60%] 2xl:w-[50%] my-5 lg:mt-15 px-5 animation-zoomIn animation-delay-5">
+                        <h4 class="text-lg font-semibold text-[#00c950]">Qui suis-je?</h4>
+                        <h1 class="text-2xl/9 md:text-3xl/12 font-bold 2xl:text-2xl/12 my-5">Dieudonné AMOIKON,
+                            Analyste Programmeur Senior et Lead Développeur PHP/Symfony</h1>
+                        <div
+                            class="text-justify text-base/7 md:text-xl/10 lg:text-base/7 text-gray-400 2xl:text-lg/8 mt-5">
+                            <p class="my-3">
+                                Je suis <strong class="text-gray-300">Dieudonné AMOIKON</strong>, Analyste Programmeur
+                                Senior et Lead Développeur
+                                PHP/Symfony avec plus de 16 ans d'expérience, je conçois et développe des solutions web
+                                scalables et performantes.
+                            </p>
+
+                            <p class="my-3">
+                                Passionné par la technologie et l'innovation, j'ai acquis au fil des années une <strong
+                                    class="text-gray-300">vision stratégique</strong> et une grande <strong
+                                    class="text-gray-300">perspicacité technique</strong> - qualité que je cultive
+                                également dans le scoutisme, où je porte le totem d'<strong
+                                    class="text-[#00c950] cursor-pointer hover:text-white transition">Epervier Perspicace</strong>. Cette double casquette m'a
+                                appris à allier rigueur d'exécution, anticipation des besoins et accompagnement des
+                                équipes.
+                            </p>
+                            <p class="my-3">
+                                Du développement de plateforme à fort trafic (+30 000 utilisateurs) à la digitalisation
+                                de processus métiers, je mets mon expertise et mon engagement au service de projets à
+                                fort impact.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 border-t border-gray-500/25 pt-5 text-gray-400 mt-10">
+
+                            <div class="box-decoration-slice bg-linear-to-t from-[#1e40af]/40 to-black border border-[#1e40af]/20 hover:border-[#1e40af]/80 hover:-translate-y-2 hover:translate-x-1 transition duration:300 flex flex-col justify-center items-center  py-2 rounded-lg">
+                                <figure class="overflow-hidden">
+                                    <img src="./assets/img/competences/01.png" alt="" class="w-[80px]">
+                                </figure>
+                                <ul
+                                    class=" text-[12px] w-full px-2 mt-1">
+                                    <li class="my-1 border-b border-[#1e40af]/20 cursor-pointer hover:bg-[#1e40af]/20 pt-1 px-2">Système métier</li>
+                                    <li class="my-1 border-b border-[#1e40af]/20 cursor-pointer hover:bg-[#1e40af]/20 pt-1 px-2">Solutions web</li>
+                                    <li class="my-1 border-b border-[#1e40af]/20 cursor-pointer hover:bg-[#1e40af]/20 pt-1 px-2">Application hybride</li>
+                                </ul>
+                            </div>
+
+                            <div
+                                class="box-decoration-slice bg-linear-to-t from-[#1e40af]/40 to-black border border-[#1e40af]/20 hover:border-[#1e40af]/80 hover:-translate-y-2 hover:translate-x-1 transition duration:300 flex flex-col justify-center items-center  py-2 rounded-lg">
+                                <figure class="overflow-hidden">
+                                    <img src="./assets/img/competences/02.png" alt="" class="w-[80px]">
+                                </figure>
+                                <ul class=" text-[12px] w-full px-2 mt-1">
+                                    <li class="my-1 border-b border-[#1e40af]/20 cursor-pointer hover:bg-[#1e40af]/20 pt-1 px-2">Base de données</li>
+                                    <li class="my-1 border-b border-[#1e40af]/20 cursor-pointer hover:bg-[#1e40af]/20 pt-1 px-2">Mérise & UML</li>
+                                    <li class="my-1 border-b border-[#1e40af]/20 cursor-pointer hover:bg-[#1e40af]/20 pt-1 px-2">MySQL, PhpMyAdmin
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div
+                                class="box-decoration-slice bg-linear-to-t from-[#1e40af]/40 to-black border border-[#1e40af]/20 hover:border-[#1e40af]/80 hover:-translate-y-2 hover:translate-x-1 transition duration:300 flex flex-col justify-center items-center  py-2 rounded-lg">
+                                <figure class="overflow-hidden">
+                                    <img src="./assets/img/competences/03.png" alt="" class="w-[80px]">
+                                </figure>
+                                <ul class=" text-[12px] w-full px-2 mt-1">
+                                    <li class="my-1 border-b border-[#1e40af]/20 cursor-pointer hover:bg-[#1e40af]/20 pt-1 px-2">API REST
+                                    </li>
+                                    <li class="my-1 border-b border-[#1e40af]/20 cursor-pointer hover:bg-[#1e40af]/20 pt-1 px-2">Architecture MVC</li>
+                                    <li class="my-1 border-b border-[#1e40af]/20 cursor-pointer hover:bg-[#1e40af]/20 pt-1 px-2">Intégration
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div
+                                class="box-decoration-slice bg-linear-to-t from-[#1e40af]/40 to-black border border-[#1e40af]/20 hover:border-[#1e40af]/80 hover:-translate-y-2 hover:translate-x-1 transition duration:300 flex flex-col justify-center items-center  py-2 rounded-lg">
+                                <figure class="overflow-hidden">
+                                    <img src="./assets/img/competences/04.png" alt="" class="w-[80px]">
+                                </figure>
+                                <ul class=" text-[12px] w-full px-2 mt-1">
+                                    <li class="my-1 border-b border-[#1e40af]/20 cursor-pointer hover:bg-[#1e40af]/20 pt-1 px-2">Méthodologie Agile
+                                    </li>
+                                    <li class="my-1 border-b border-[#1e40af]/20 cursor-pointer hover:bg-[#1e40af]/20 pt-1 px-2">Coordination d'équipe</li>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+
+                        <div class="flex flex-row gap-4 justify-start items-center md:items-center content-start  mt-5">
+                            <a href="mailto:delrodieamoikon@gmail.com?subject=Demande%20de%20CV&body=Bonjour,%0A%0AVotre profile m'interesse pour [projets/besoins]... %0A%0AJ'aimerais donc télécharger votre CV." target="_blank"
+                                class="bg-green-500 text-black py-4 px-4 md:py-4 md:px-4 rounded-lg hover:bg-green-900 hover:text-white transition text-sm md:text-base mt-10">Télécharger
+                                mon CV</a>
+
+                                <div class="social-icons flex items-center gap-2 mt-10 ms-auto">
+                                    <a href="https://www.linkedin.com/in/dieudonne-amoikon-a3266316a/" target="_blank" rel="noopener noreferrer"
+                                        class="text-white transition hover:text-[#00c950] text-xl animation-slideUp animation-delay-4">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://github.com/delrodieamoikon" target="_blank" rel="noopener noreferrer"
+                                        class="text-white hover:text-[#00c950] transition hover:text-[#00c950] text-xl animation-slideUp animation-delay-5">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://twitter.com/delrodie" target="_blank" rel="noopener noreferrer"
+                                        class="text-white hover:text-[#00c950] transition hover:text-[#00c950] text-xl animation-slideUp animation-delay-6">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/delroieamoikon2" target="_blank" rel="noopener noreferrer"
+                                        class="text-white hover:text-[#00c950] transition hover:text-[#00c950] text-xl animation-slideUp animation-delay-7">
+                                        <i class="fa-brands fa-square-facebook"></i>
+                                    </a>
+
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

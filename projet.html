@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr" class="scrollbar-thumb-gray-700/30 scrollbar-track-black overflow-auto">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projet web | Dieudonné Amoikon</title>
+    <meta name="description" content="Découvrez une réalisation web de Dieudonné Amoikon, analyste programmeur spécialisé en PHP et Symfony.">
+    <meta name="author" content="Dieudonné Amoikon"><meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://delrodieamoikon.github.io/portfolio/projet.html">
+    <meta property="og:locale" content="fr_CI"><meta property="og:type" content="article"><meta property="og:site_name" content="Portfolio de Dieudonné Amoikon"><meta property="og:title" content="Projet web | Dieudonné Amoikon"><meta property="og:description" content="Découvrez une réalisation web de Dieudonné Amoikon."><meta property="og:url" content="https://delrodieamoikon.github.io/portfolio/projet.html"><meta property="og:image" content="https://delrodieamoikon.github.io/portfolio/assets/img/portrait-color.png"><meta property="og:image:alt" content="Projet web de Dieudonné Amoikon">
+    <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Projet web | Dieudonné Amoikon"><meta name="twitter:description" content="Découvrez une réalisation web de Dieudonné Amoikon."><meta name="twitter:image" content="https://delrodieamoikon.github.io/portfolio/assets/img/portrait-color.png">
+    <link rel="shortcut icon" href="./assets/img/favico2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/navigation.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-black text-white">
+    <header class="container mx-auto absolute inset-x-0 top-0 z-50 bg-black/50 backdrop-blur-sm fixed">
+        <nav class="flex items-center justify-between py-2 px-4 lg:px-8 bg-" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="index.html"
+                    class="text-xl text-[#00c950] font-bold justify-center items-center flex gap-2 logo">
+                    <img src="./assets/img/logo/logo-amoikon.png" alt="" class="" width="90px">
+                    <span class="text-2xl md:text-3xl lg:text-3xl">AMOIKON D.</span>
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+                    <span class="sr-only">Ouvrir le menu principal</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        data-slot="icon" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="index.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">Accueil</a>
+                <a href="apropos.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">A propos</a>
+                <a href="competences.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">Competences</a>
+                <a href="projets.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">Projets</a>
+                <a href="contact.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">Contact</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="contact.html"
+                    class="px-5 py-2 bg-green-500 text-[#1e40af] font-semibold hover:bg-green-700 hover:text-white rounded-3xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 transition">Soumettez
+                    votre projet</a>
+            </div>
+        </nav>
+        <el-dialog>
+            <dialog id="mobile-menu" class="backdrop:gbg-transparent lg-hidden">
+                <div class="fixed inset-0 focus:outline-none">
+                    <el-dialog-panel
+                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#0f172a] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                        <div class="flex items-center justify-between">
+                            <a href="index.html" class="-m-1.5 p-1.5 justify-center items-center flex gap-2 logo">
+                                <img src="./assets/img/logo/logo-amoikon-vert.png" alt="Logo Amoikon"
+                                    class="h-8 w-auto">
+                                <span class="text-lg md:text-2xl lg:text-2xl text-[#00c950]">AMOIKON D.</span>
+                            </a>
+                            <button type="button" command="close" commandfor="mobile-menu"
+                                class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                                <span class="sr-only">Fermer le menu</span>
+                                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" data-slot="icon" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-gray-500/25">
+                                <div class="space-y-2 py-6">
+                                    <a href="index.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base/7 font-semibold text-white hover:bg-gray-400/10">Accueil</a>
+                                    <a href="apropos.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">A propos</a>
+                                    <a href="competences.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">Competences</a>
+                                    <a href="projets.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">Projets</a>
+                                    <a href="contact.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">Contact</a>
+                                </div>
+                                <div class="py-6">
+                                    <a href="contact.html"
+                                        class="-mx-3 block rounded-lg py-2.5 px-3 text-center text-sm font-semibold leading-6 bg-green-500 text-[#1e40af] hover:bg-green-700 hover:text-white transition">Soumettez
+                                        votre projet</a>
+                                </div>
+                            </div>
+                        </div>
+                    </el-dialog-panel>
+                </div>
+            </dialog>
+        </el-dialog>
+    </header>
+    <main>
+        <section id="page"
+            class="container mx-auto relative isolate min-h-screen flex flex-col justify-start items-start content-start pt-28 pb-16">
+            <div class="relative mx-auto max-w-[1512px]" data-project-detail>
+                <h1 class="text-4xl md:text-7xl text-center font-cocon text-gray-800/70">Chargement du projet...</h1>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/project-detail.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="fr" class="scrollbar-thumb-gray-700/30 scrollbar-track-black overflow-auto">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N’yâkâ Nansi 2026 | Plateforme d’inscription CVAV</title>
+
+    <meta name="description"
+        content="Plateforme d'inscription en ligne pour N'yâkâ Nansi 2026, fête diocésaine des Cœurs Vaillants et Âmes Vaillantes du diocèse d'Abidjan.">
+    <meta name="author" content="Dieudonné Amoikon"><meta name="robots" content="index, follow, max-image-preview:large"><link rel="canonical" href="https://delrodieamoikon.github.io/portfolio/projet-nyaka2026.html">
+
+    <meta property="og:locale" content="fr_CI"><meta property="og:site_name" content="Portfolio de Dieudonné Amoikon"><meta property="og:title" content="N’yâkâ Nansi 2026 | Plateforme d’inscription CVAV">
+    <meta property="og:description"
+        content="Platforme d'inscription en ligne pour la fete diocésaine N'yâkâ Nansi 2026 des Coeurs Vaillants - Âmes Vaillantes (CVAV) du Diocèse d'Abidjan.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://delrodieamoikon.github.io/portfolio/projet-nyaka2026.html">
+    <meta property="og:image" content="https://delrodieamoikon.github.io/portfolio/assets/img/projets/nyaka-cvav.png"><meta property="og:image:alt" content="Aperçu de la plateforme N'yâkâ Nansi 2026">
+    <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="N’yâkâ Nansi 2026 | Plateforme CVAV"><meta name="twitter:description" content="Une plateforme d'inscription conçue pour la fête diocésaine CVAV d'Abidjan."><meta name="twitter:image" content="https://delrodieamoikon.github.io/portfolio/assets/img/projets/nyaka-cvav.png">
+
+    <link rel="shortcut icon" href="./assets/img/favico2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/navigation.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-black text-white">
+    <header class="container mx-auto absolute inset-x-0 top-0 z-50 bg-black/50 backdrop-blur-sm fixed">
+        <nav class="flex items-center justify-between py-2 px-4 lg:px-8 bg-" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="index.html"
+                    class="text-xl text-[#00c950] font-bold justify-center items-center flex gap-2 logo">
+                    <img src="./assets/img/logo/logo-amoikon.png" alt="" class="" width="90px">
+                    <span class="text-2xl md:text-3xl lg:text-3xl">AMOIKON D.</span>
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+                    <span class="sr-only">Ouvrir le menu principal</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        data-slot="icon" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="index.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">Accueil</a>
+                <a href="apropos.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">À propos</a>
+                <a href="competences.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">Compétences</a>
+                <a href="projets.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">Projets</a>
+                <a href="contact.html"
+                    class="text-sm font-semibold leading-6 text-white hover:text-[#00c950] uppercase">Contact</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="#contact"
+                    class="px-5 py-2 bg-green-500 text-[#1e40af] font-semibold hover:bg-green-700 hover:text-white rounded-3xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 transition">Soumettez
+                    votre projet</a>
+            </div>
+        </nav>
+        <el-dialog>
+            <dialog id="mobile-menu" class="backdrop:gbg-transparent lg-hidden">
+                <div class="fixed inset-0 focus:outline-none">
+                    <el-dialog-panel
+                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#0f172a] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                        <div class="flex items-center justify-between">
+                            <a href="index.html" class="-m-1.5 p-1.5 justify-center items-center flex gap-2 logo">
+                                <img src="./assets/img/logo/logo-amoikon-vert.png" alt="Logo Amoikon"
+                                    class="h-8 w-auto">
+                                <span class="text-lg md:text-2xl lg:text-2xl text-[#00c950]">AMOIKON D.</span>
+                            </a>
+                            <button type="button" command="close" commandfor="mobile-menu"
+                                class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                                <span class="sr-only">CLose menu</span>
+                                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" data-slot="icon" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-gray-500/25">
+                                <div class="space-y-2 py-6">
+                                    <a href="index.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base/7 font-semibold text-white hover:bg-gray-400/10">Accueil</a>
+                                    <a href="apropos.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">À
+                                        propos</a>
+                                    <a href="competences.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">Compétences</a>
+                                    <a href="projets.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">Projets</a>
+                                    <a href="contact.html"
+                                        class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-400/10">Contact</a>
+                                </div>
+                                <div class="py-6">
+                                    <a href="contact.html"
+                                        class="-mx-3 block rounded-lg py-2.5 px-3 text-center text-sm font-semibold leading-6 bg-green-500 text-[#1e40af] hover:bg-green-700 hover:text-white transition">Soumettez
+                                        votre projet</a>
+                                </div>
+                            </div>
+                    </el-dialog-panel>
+                </div>
+            </dialog>
+        </el-dialog>
+    </header>
+    <main>
+        <section id="page"
+            class="container mx-auto relative isolate min-h-screen flex flex-col justify-start items-start content-start pt-28 pb-16">
+            <div class="relative mx-auto max-w-[1512px]">
+                <!-- Entete -->
+                <h1 class="text-4xl md:text-7xl text-center font-cocon text-gray-800/70 hover:text-gray-700 transition">
+                    <i class="fa-solid fa-earth-africa"></i> N'yâkâ Nansi 2026 
+                </h1>
+
+                <div class="mx-auto relative w-full lg:w-5xl grid grid-cols-1 gap-6 mt-20">
+
+                    <div class=" text-base/7 md:text-xl/10 lg:text-base/7 text-gray-400 2xl:text-lg/8">
+                        <figure class="">
+                            <img src="./assets/img/projets/nyaka-cvav.png" alt=""
+                                class="float-left h-[400px] md:h-[500px] object-contain pr-7 pb-7">
+                        </figure>
+                        <div class="mb-3">
+                            <h3 class="text-2xl text-white"> <span class="font-bold">Plateforme d'inscription N'yâkâ Nansi 2026</span> - <span
+                                    class="text-sm italic">Développement Symfony</span></h3>
+                            <p class="text-justify mt-3">
+                                Conception et développement d'une <strong class="semibold">plateforme d'inscription en ligne</strong>, pour la fête diocésaine <strong
+                                    class="semibold">N'yâkâ Nansi 2026 des Coeurs Vaillants - Âmes Vaillantes (CVAV)</strong> du diocèse d'Abidjan.
+                            </p>
+
+                            <h3 class="text-2xl mt-7 font-bold text-white">Contexte & objectifs</h3>
+                            <p>
+                                Solution digitale permettant aux participants (enfants, jeunes et accompagnateurs) de s'inscrire à l'événement prévu du <strong class="font-semibold">1er au 3 mai 2026</strong>
+                            </p>
+
+                            <h3 class="text-2xl mt-7 font-bold text-white">Technologies utilisées</h3>
+                            <ul class="list-inside list-disc">
+                                <li><span class="font-semibold">Backend:</span> Symfony(PHP)</li>
+                                <li><span class="font-semibold">Frontend:</span> Twig (HTML5/CSS3), JavaScript (Stimulus), Bootstrap5</li>
+                                <li><span class="font-semibold">Base de données:</span> MySQL / Doctrine ORM</li>
+                                <li><span class="font-semibold">Administration:</span> EasyAdmin</li>
+                                <li><span class="font-semibold">Paiment:</span> Intégration de l'API Wave CI (mobile paiement)</li>
+                            </ul>
+
+                            <h3 class="text-2xl mt-7 font-bold text-white">Fonctionnalités principales</h3>
+                            <ul class="list-inside list-disc">
+                                <li>Inscription en ligne multi-profils (CV-AV et non CV-AV)</li>
+                                <li><strong class="semibold">Paiement sécurisé en temps réel via Wave CI</strong></li>
+                                <li>Espace personnel: consultation des inscription, téléchargement de réçus, choix de T-shirt</li>
+                                <li>Gestion complète des participants et contentieux via le backoffice EasyAdmin</li>
+                                <li>Exports et suivi statistiques des isncriptions</li>
+                            </ul>
+                            <p class="mt-7">
+                                Ce projet m'a permis de mettre en pratique une architecture Symfony solide, tout en
+                                repondant à un besoin réel d'une organisation à impact social et culturel en Côte
+                                d'Ivoire.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-2 pe-3 mt-10">
+                            <a href="https://ongkagninmin.com/"
+                                class="text-3xl me-2 hover:text-green-500 flex items-start" target="_blank"><i
+                                    class="fa-solid fa-earth-americas text-"></i> <span
+                                    class="border border-[#1e40af]/40 bg-[#1e40af]/15 hover:bg-[#1e40af]/50 py-2 px-3 text-[10px]">www.ongkagninmin.com</span>
+                            </a>
+
+                            <a href="projets.html" class="text-end text-2xl hover:text-green-500">
+                                <i class="fa-solid fa-tent-arrow-turn-left"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

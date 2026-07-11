@@ -1,0 +1,12 @@
+/* NAVIGATION */
+@view-transition{
+    navigation: auto;
+}
+
+::view-transition-group(page-content){
+    animation-duration: 3s;
+}
+
+main{
+    view-transition-name: page-content;
+}
