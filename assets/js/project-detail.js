@@ -55,6 +55,8 @@
       canonical.setAttribute('href', projectUrl);
     }
 
+    window.portfolioAnalytics?.projectView(project);
+
     root.innerHTML = `
       <h1 class="text-4xl md:text-7xl text-center font-cocon text-gray-800/70 hover:text-gray-700 transition">
         <i class="fa-solid fa-earth-africa"></i> ${escapeHtml(project.title)}
