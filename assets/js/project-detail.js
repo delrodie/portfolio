@@ -13,7 +13,7 @@
 
   const params = new URLSearchParams(window.location.search);
   const slug = params.get('slug');
-  const siteUrl = 'https://delrodieamoikon.github.io/portfolio';
+  const siteUrl = 'https://delrodie.github.io/portfolio';
 
   const setMeta = (selector, content) => {
     const element = document.querySelector(selector);
