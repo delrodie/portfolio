@@ -21,7 +21,29 @@
     font-family: var(--font-family-cocon);
 }
 
+html {
+    font-size: 100%;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
 body{
+    font-family: var(--font-family-inter);
+    font-size: 1rem;
+    line-height: 1.65;
+    letter-spacing: 0.005em;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+nav {
     font-family: var(--font-family-poppins);
 }
 
@@ -115,3 +137,71 @@ body{
     }
 }
 
+/* Lisibilité et rythme vertical des pages internes */
+#page > div {
+    width: 100%;
+    padding-inline: clamp(1rem, 4vw, 2rem);
+}
+
+#page > div > h1:first-child {
+    font-size: clamp(2rem, 8vw, 4.5rem);
+    line-height: 1.08;
+    text-wrap: balance;
+}
+
+#page > div > h1:first-child + div {
+    margin-top: clamp(2.25rem, 8vw, 5rem);
+}
+
+#page p,
+#page li {
+    line-height: 1.75;
+}
+
+#page input,
+#page select,
+#page textarea,
+#page button {
+    min-height: 44px;
+}
+
+@media (max-width: 639px) {
+    #page {
+        padding-top: 6.5rem;
+        padding-bottom: 3rem;
+    }
+
+    #page .text-justify {
+        text-align: left;
+    }
+
+    #page [class*="text-[10px]"],
+    #page [class*="text-[12px]"] {
+        font-size: 0.8125rem !important;
+        line-height: 1.55 !important;
+    }
+
+    #page [class*="text-[13px]"] {
+        font-size: 0.875rem !important;
+        line-height: 1.65 !important;
+    }
+
+    #page [class*="mx-3"],
+    #page [class*="mx-4"] {
+        margin-inline: 0.25rem;
+    }
+
+    .hero-copy {
+        padding-inline: 1.25rem;
+    }
+
+    .hero-copy p {
+        font-size: 1rem;
+        line-height: 1.7;
+        max-width: 38rem;
+    }
+
+    .hero-copy > div {
+        flex-wrap: wrap;
+    }
+}

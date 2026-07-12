@@ -37,7 +37,7 @@
     const projectUrl = `${siteUrl}/projet.html?slug=${encodeURIComponent(project.slug)}`;
     const imageUrl = project.image
       ? new URL(project.image.replace(/^\.\//, ''), `${siteUrl}/`).href
-      : `${siteUrl}/assets/img/portrait-color.png`;
+      : `${siteUrl}/assets/img/amoikon4.png`;
 
     document.title = title;
     setMeta('meta[name="description"]', description);

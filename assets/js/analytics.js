@@ -2,7 +2,7 @@
   'use strict';
 
   const GTM_ID = 'GTM-K2R6GX37';
-  // La balise Google GA4 G-FNPP7HZLKQ doit être configurée et publiée dans ce conteneur GTM.
+  // GA4 est chargé explicitement dans le <head> pour rester détectable par les outils Google.
   const CONSENT_KEY = 'portfolio_analytics_consent';
 
   const readConsent = () => {
@@ -50,7 +50,7 @@
   firstScript.parentNode.insertBefore(gtmScript, firstScript);
 
   const pushEvent = (event, parameters = {}) => {
-    window.dataLayer.push({ event, ...parameters });
+    window.gtag('event', event, parameters);
   };
 
   window.portfolioAnalytics = Object.freeze({
