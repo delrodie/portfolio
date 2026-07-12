@@ -158,6 +158,26 @@ nav {
     line-height: 1.75;
 }
 
+.content-link {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.2em;
+    overflow-wrap: anywhere;
+    transition: color 180ms ease;
+}
+
+.content-link:hover {
+    color: #ffffff;
+}
+
+.content-link:focus-visible {
+    border-radius: 0.2rem;
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
 #page input,
 #page select,
 #page textarea,

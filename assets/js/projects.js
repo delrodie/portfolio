@@ -11,6 +11,12 @@
   const pagination = document.createElement('nav');
   pagination.className = 'mx-4 mt-8 flex flex-wrap items-center justify-center gap-2 text-sm';
   pagination.setAttribute('aria-label', 'Pagination des projets');
+  list.setAttribute('aria-live', 'polite');
+  list.innerHTML = `
+    <div class="mx-4 rounded-lg border border-[#1e40af]/40 bg-[#1e40af]/15 px-5 py-8 text-center text-gray-400">
+      Chargement des projets…
+    </div>
+  `;
 
   const escapeHtml = (value) => String(value || '')
     .replaceAll('&', '&amp;')
@@ -18,6 +24,7 @@
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#039;');
+  const sanitizeContent = window.portfolioContent?.sanitize || escapeHtml;
 
   const projectTheme = (type) => {
     if (type === 'live') {
@@ -98,7 +105,7 @@
         </div>
         <h2 class="font-semibold mt-3 mb-2">${escapeHtml(project.title)}</h2>
         <h3 class="italic text-sm text-green-600">${escapeHtml(project.subtitle)}</h3>
-        <p class="my-3 text-sm/7 font-extralight">${escapeHtml(project.summary)}</p>
+        <p class="my-3 text-sm/7 font-extralight">${sanitizeContent(project.summary)}</p>
         <ul class="flex flex-wrap items-center text-[12px] font-light">
           ${(project.technologies || []).map((tech) => `<li class="${chipClass}">${escapeHtml(tech)}</li>`).join('')}
         </ul>
@@ -154,7 +161,7 @@
     list.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
-  fetch('./assets/data/projects.json')
+  fetch(`./assets/data/projects.json?v=${Date.now()}`, { cache: 'no-store' })
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}`);
@@ -165,6 +172,11 @@
     .then((data) => {
       projects = sortProjectsByDateDesc(Array.isArray(data.projects) ? data.projects : []);
       if (!projects.length) {
+        list.innerHTML = `
+          <div class="mx-4 rounded-lg border border-[#1e40af]/40 bg-[#1e40af]/15 px-5 py-8 text-center text-gray-400">
+            Aucun projet n’est actuellement publié.
+          </div>
+        `;
         return;
       }
 
@@ -173,5 +185,11 @@
     })
     .catch((error) => {
       console.warn('Impossible de charger les projets dynamiques.', error);
+      list.innerHTML = `
+        <div class="mx-4 rounded-lg border border-red-500/40 bg-red-500/10 px-5 py-8 text-center text-red-200" role="alert">
+          La liste des projets n’a pas pu être chargée. Vérifiez que le fichier
+          <code class="font-mono">assets/data/projects.json</code> existe, porte exactement ce nom et contient un JSON valide.
+        </div>
+      `;
     });
 })();

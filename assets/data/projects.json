@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-10",
+  "updatedAt": "2026-07-12",
   "projects": [
     {
       "slug": "dreammaker-os",
@@ -87,16 +87,16 @@
       ]
     },
     {
-      "slug": "le-grand-cru",
+      "slug": "le-grand-cru-plateforme-ecommerce",
       "date": "Avril 2026",
       "status": "En cours",
       "statusType": "progress",
-      "title": "LE GRAND CRU - Plateforme Ecommerce",
+      "title": "LE GRAND CRU - Plateforme Ecommerce de Vins, Champagnes & Spiritueux",
       "subtitle": "Consultant - Le Grand Cru",
       "role": "Developpeur Symfony",
-      "summary": "Developpement d'une plateforme ecommerce Symfony pour la presentation, la gestion et la vente de produits avec une interface moderne et responsive.",
-      "image": "",
-      "website": "",
+      "summary": "Developpement d'une plateforme ecommerce Sdédiée à la vente en ligne de grands crus, champagnes et spirituex premium.",
+      "image": "./assets/img/projets/legrandcru.png",
+      "website": "https://legrandcru.net/",
       "technologies": [
         "PHP 8",
         "Symfony 8",
@@ -114,9 +114,25 @@
         {
           "heading": "Contexte & objectifs",
           "items": [
-            "Construire une experience ecommerce claire, rapide et facile a administrer.",
-            "Prevoir une architecture compatible avec les evolutions commerciales du projet.",
-            "Optimiser l'affichage responsive et les parcours utilisateur essentiels."
+            "Le site vise à proposer une expérience haut de gamme aux amateurs et professionnels à la recherche de vins de d'exception (Bordeaux, Bourbogne, etc.), champagnes (notamment Yves Louvet) et whiskies (Guillon)"
+          ]
+        },
+        {
+          "heading": "Etat du projet",
+          "items": [
+            "En cours de développement (Symfony 8).",
+            "Catalogue interactif Page Flip déjà en ligne pour présenter les produits de manière élégante et immersive en attendant le site complet (<a href=\"https://legrandcru.net/catalogue\">consulter le catalogue Le Grand Cru</a>)."
+          ]
+        },
+        {
+          "heading": "Fonctionnalités développées / en cours",
+          "items": [
+            "Catalogue produit interactif et visuellement premium (effet Page FLip / feuilltoir numérique).",
+            "Navigation par maques et collections.",
+            "Design élégant et responsive adapté au secteur du luxe.",
+            "Structure prête pour Backoffice (Gestion des produits, commandes, clients, etc.).",
+            "Optimisation SEO et performance.",
+            "Préparation à intégration e-commerce complète (panier, commande, paiement, etc.)"
           ]
         }
       ]
@@ -174,59 +190,128 @@
       ]
     },
     {
-      "slug": "site-web-dynamique",
-      "date": "Mai 2025",
-      "status": "Archive",
-      "statusType": "archive",
-      "title": "Site web dynamique - PFS",
+      "slug": "pfs-treichville-site-institutionnel",
+      "date": "Juillet 2025",
+      "status": "En prod",
+      "statusType": "live",
+      "title": "PFS Treichville - Site intitutionnel et de gestion des programmes d'instertion",
       "subtitle": "PFS-Treichville",
       "role": "Consultant",
-      "summary": "Conception du site inetrnet de PFS Treichville",
-      "image": "./assets/img/projets/ongkagninmin.png",
-      "website": "",
+      "summary": "Développement du site officiel de la Plateforme de Services de Treichville (PFS-Treichville), un dispositif national dédié à l'insertion professionnelle des jeunes et à la promotion de l'emploi dans la commune de Treichville (Abidjan, Côte d'Ivoire)",
+      "image": "./assets/img/projets/pfs-treichville.png",
+      "website": "https://pfs-treichville.org",
       "technologies": [
-        "Symfony8",
-        "PHP8"
+        "Symfony 7.3",
+        "PHP 8",
+        "Bootstrap 5"
       ],
       "sections": [
         {
-          "heading": "Contexte & objectifs",
+          "heading": "Contexte",
           "items": [
-            "Premier point a presenter.",
-            "Deuxieme point.",
-            "Troisieme point."
+            "La PFS-Treichville agit comme un guichet unique d'insertion proposant plusieurs programmes et mesures d'accompagnement (RST, Espoir Jeunes, Chanier Ecole, GERME, etc.) pour favoriser l'insertion durable des jeunes et des publics vulnérables."
           ]
         },
         {
-          "heading": "Fonctionnalités",
+          "heading": "Fonctionnalités principales",
           "items": [
-            "Fonctionnalite 1",
-            "Fonctionnalité 2",
-            "Fonctionnalite 3"
+            "Présentation détaillée des missions et organes de la PFS (Comité Local d'Insertion et Mission Locale).",
+            "Description claire des différents programmes d'insertion professionnelle.",
+            "Section actualités avec mise en avant des réalisations.",
+            "Pages statitiques et dynamiques (QUi sommes-nous?, Nos programmes, Actualités, etc.).",
+            "Design responsive et institutionnel adapté à une structure publique."
           ]
         }
       ]
     },
     {
-      "slug": "projet-test",
-      "date": "Janv 2025",
-      "status": "Archive",
-      "statusType": "archive",
-      "title": "Projet Test",
+      "slug": "dipao-pfs-treichville",
+      "date": "Décembre 2024",
+      "status": "En prod",
+      "statusType": "live",
+      "title": "DIPAO PFS Treichville - Plateforme de Gestion et de Suivi",
       "subtitle": "PFS-Treichville",
       "role": "Consultant",
-      "summary": "test",
-      "image": "",
-      "website": "https://delrodie.github.io",
+      "summary": "Développement de DIPAO, la plateforme interne de gestion et de suivi des bénéficiaires de la Plateforme de Services de Treichville (PFS-Treichville).",
+      "image": "./assets/img/projets/pfs-treichville_dipao.png",
+      "website": "",
       "technologies": [
-        "Symfony8",
-        "PHP8"
+        "Symfony 7.2",
+        "PHP 8.2",
+        "Bootsrtap",
+        "MySQL"
       ],
       "sections": [
         {
-          "heading": "Contexte & objectifs",
+          "heading": "Contexte",
           "items": [
-            "Premier point a presenter."
+            "Outil digital dédié aux agents et responsables de la PFS pour gérer efficacement les programmes d'insertion professionnelle des jeunes (RST, Espoir Jeunes, Chantier Ecole, etc.)"
+          ]
+        },
+        {
+          "heading": "Fonctionnalités principales",
+          "items": [
+            "Tableau de bord complet avec statistiques de gestion.",
+            "Gestion des inscritpion et bénéficiaires.",
+            "Suivi des parcours d'insertion professionnelle.",
+            "Gestion des programmes et mesures d'accompagnements.",
+            "Système de connexion et d'inscription sécurisé.",
+            "Architecture adaptée à une utilisation multi-utilisateurs (agents, administrateurs)"
+          ]
+        },
+        {
+          "heading": "Expertises développées",
+          "items": [
+            "<code><em>Ce projet renforce mes compétences sur Symfony 7 dans la création d'outils de gestion internes à fort besoin opérationnel, avec une attention particulière à la sécurité et à l'ergonomie pour les utilisateurs métier.</em></code>"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cashapp-v2",
+      "date": "Juin 2023",
+      "status": "Deploye",
+      "statusType": "live",
+      "title": "CashApp v2 - Logiciel de Caisse & Gestion de SUpermarché",
+      "subtitle": "Freelance - Boutik Amerik Canada",
+      "role": "Développeur, concepteur",
+      "summary": "Développement et déploiement d'un logiciel complet de caisse destinée à la gestion de supermarché.",
+      "image": "./assets/img/projets/cashapp-v2.png",
+      "website": "",
+      "technologies": [
+        "symfony6.3",
+        "PHP8.1",
+        "MySQL"
+      ],
+      "sections": [
+        {
+          "heading": "Contexte",
+          "items": [
+            "Solution digitale de type POS(Point of Sale) permettant la gestion quotidienne des ventes, du stock et des finances de supermarché."
+          ]
+        },
+        {
+          "heading": "Fonctionnalités principales",
+          "items": [
+            "Tableau de bord en temps réel (ventes du jour, du mois, estimation du stock, bénéfice estimé)",
+            "Gestion des caisses et des ventes",
+            "Gestion des produits, stocks, approvisionnement, fournisseur, inventaire, etc.",
+            "Suivi des finances",
+            "Statistiques et reporting détaillé"
+          ]
+        },
+        {
+          "heading": "Points forts du projet",
+          "items": [
+            "Logiciel v2 stable et utilisé en production depuis juin 2023 avec des milliers de produits et un chiffre d'affaires à 9 chiffres de FCFA",
+            "COnceptionorientée utilisateur pour un usage quotidien caisse",
+            "Gestion complète du cycle: approvisionnement -> vente -> stock -> finances"
+          ]
+        },
+        {
+          "heading": "Expertises développées",
+          "items": [
+            "<code><em>Ce projet démontre ma capacité à développer des application métier critiques avec Symfony, alliant performance, ergonomie et fiabilité pour le secteur du commerce de détail.</em></code>"
           ]
         }
       ]

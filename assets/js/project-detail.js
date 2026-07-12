@@ -10,6 +10,7 @@
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#039;');
+  const sanitizeContent = window.portfolioContent?.sanitize || escapeHtml;
 
   const params = new URLSearchParams(window.location.search);
   const slug = params.get('slug');
@@ -26,14 +27,15 @@
     <section class="mt-7">
       <h3 class="text-2xl font-bold text-white">${escapeHtml(section.heading)}</h3>
       <ul class="list-inside list-disc mt-3">
-        ${(section.items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join('')}
+        ${(section.items || []).map((item) => `<li>${sanitizeContent(item)}</li>`).join('')}
       </ul>
     </section>
   `).join('');
 
   const render = (project) => {
     const title = `${project.title} | Dieudonné Amoikon`;
-    const description = project.summary || `Découvrez le projet ${project.title} réalisé par Dieudonné Amoikon.`;
+    const description = window.portfolioContent?.toText(project.summary)
+      || `Découvrez le projet ${project.title} réalisé par Dieudonné Amoikon.`;
     const projectUrl = `${siteUrl}/projet.html?slug=${encodeURIComponent(project.slug)}`;
     const imageUrl = project.image
       ? new URL(project.image.replace(/^\.\//, ''), `${siteUrl}/`).href
@@ -73,7 +75,7 @@
               <span class="font-bold">${escapeHtml(project.subtitle)}</span>
               <span class="text-sm italic"> - ${escapeHtml(project.role)}</span>
             </h2>
-            <p class="text-justify mt-3">${escapeHtml(project.summary)}</p>
+            <p class="text-justify mt-3">${sanitizeContent(project.summary)}</p>
             ${renderSections(project.sections)}
             <h3 class="text-2xl mt-7 font-bold text-white">Technologies</h3>
             <ul class="flex flex-wrap items-center text-[12px] font-light mt-3">
@@ -115,7 +117,7 @@
     return;
   }
 
-  fetch('./assets/data/projects.json')
+  fetch(`./assets/data/projects.json?v=${Date.now()}`, { cache: 'no-store' })
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}`);

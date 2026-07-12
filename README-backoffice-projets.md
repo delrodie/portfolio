@@ -23,6 +23,8 @@ python3 -m http.server 4173
 5. Remplacer `assets/data/projects.json` par le fichier exporte.
 6. Publier les changements sur GitHub Pages.
 
+Le nom doit rester exactement `projects.json`, sans espace avant `.json`. Les pages publiques désactivent le cache pour cette requête afin qu'un fichier remplacé soit relu dès le prochain chargement.
+
 Le backoffice ne modifie pas directement le fichier dans le dossier, car un site statique GitHub Pages n'a pas de serveur capable d'ecrire sur le disque. Il genere donc un fichier JSON pret a publier.
 
 ## Affichage public
@@ -39,5 +41,7 @@ Chaque section contient :
 
 - un titre, par exemple `Contexte & objectifs` ;
 - des points de detail, un par ligne.
+
+Les points de détail et le résumé acceptent un HTML limité et sécurisé : liens `<a href="https://...">`, emphase `<strong>`/`<em>`, soulignement `<u>`, retour à la ligne `<br>` et code `<code>`. Les scripts, iframes, formulaires, gestionnaires d'événements et protocoles dangereux sont automatiquement supprimés à l'affichage.
 
 Ces sections remplacent les anciennes pages detail ecrites a la main comme `projet-ongkagninmin.html` et `projet-nyaka2026.html`.

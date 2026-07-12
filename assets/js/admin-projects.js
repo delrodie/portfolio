@@ -97,6 +97,7 @@
       </div>
       <label class="block text-sm text-gray-300">
         Points de detail, une ligne par point
+        <span class="mt-1 block text-xs text-gray-500">HTML autorisé : &lt;a href=&quot;https://...&quot;&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;u&gt;, &lt;br&gt; et &lt;code&gt;.</span>
         <textarea data-section-items rows="5" class="mt-1 w-full border border-[#1e40af]/60 bg-black px-3 py-2 text-white outline-none focus:border-green-500">${escapeHtml((section.items || []).join('\n'))}</textarea>
       </label>
     </article>
@@ -286,7 +287,7 @@
     reader.readAsText(file);
   });
 
-  fetch('./assets/data/projects.json')
+  fetch(`./assets/data/projects.json?v=${Date.now()}`, { cache: 'no-store' })
     .then((response) => response.json())
     .then(loadProjects)
     .catch(() => {
